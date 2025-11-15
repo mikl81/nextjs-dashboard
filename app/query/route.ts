@@ -13,6 +13,18 @@ async function listInvoices() {
   return data;
 }
 
+// async function dropTables() {
+//   const data = await sql`
+//     DROP TABLE users;
+//   `;
+
+//   // DROP TABLE users;
+//   // DROP TABLE customers;
+//   // DROP TABLE invoices;
+  
+//   return data;
+// }
+
 export async function GET() {
   try {
     return Response.json(await listInvoices());
